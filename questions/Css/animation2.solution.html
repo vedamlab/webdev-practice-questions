@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover & Transform Solution</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .box, .circle, .btn, .text, .rotate-box {
+      margin: 20px auto;
+      transition: transform 0.3s ease;
+    }
+
+    /* Box moves right */
+    .box {
+      width: 100px;
+      height: 100px;
+      background: tomato;
+    }
+    .box:hover {
+      transform: translateX(150px);
+    }
+
+    /* Circle moves down */
+    .circle {
+      width: 80px;
+      height: 80px;
+      background: dodgerblue;
+      border-radius: 50%;
+    }
+    .circle:hover {
+      transform: translateY(100px);
+    }
+
+    /* Button moves diagonally */
+    .btn {
+      padding: 10px 20px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    .btn:hover {
+      transform: translate(50px, 30px);
+    }
+
+    /* Text scales and moves up */
+    .text {
+      font-size: 24px;
+      font-weight: bold;
+      color: purple;
+    }
+    .text:hover {
+      transform: translateY(-20px) scale(1.2);
+    }
+
+    /* Box rotates */
+    .rotate-box {
+      width: 100px;
+      height: 100px;
+      background: orange;
+    }
+    .rotate-box:hover {
+      transform: rotate(45deg);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Hover & Transform Solution</h1>
+
+  <div class="box"></div>
+  <div class="circle"></div>
+  <button class="btn">Hover Me</button>
+  <p class="text">Hover over me!</p>
+  <div class="rotate-box"></div>
+
+</body>
+</html>
+
