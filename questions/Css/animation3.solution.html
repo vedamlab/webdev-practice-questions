@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover & Transform Solution - More</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .square, .triangle, .image-btn, .text-box, .card {
+      margin: 20px auto;
+      transition: transform 0.3s ease;
+    }
+
+    /* Square moves left */
+    .square {
+      width: 120px;
+      height: 120px;
+      background: purple;
+    }
+    .square:hover {
+      transform: translateX(-200px);
+    }
+
+    /* Triangle moves down */
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 100px solid teal;
+    }
+    .triangle:hover {
+      transform: translateY(50px);
+    }
+
+    /* Image button diagonal move */
+    .image-btn {
+      width: 120px;
+      height: 80px;
+      background: url('https://via.placeholder.com/120x80') no-repeat center/cover;
+      border: none;
+      cursor: pointer;
+    }
+    .image-btn:hover {
+      transform: translate(30px, 40px);
+    }
+
+    /* Text box scale + move */
+    .text-box {
+      font-size: 22px;
+      font-weight: bold;
+      color: darkorange;
+    }
+    .text-box:hover {
+      transform: translateY(-25px) scale(1.5);
+    }
+
+    /* Card rotation */
+    .card {
+      width: 150px;
+      height: 200px;
+      background: lightblue;
+      border-radius: 10px;
+    }
+    .card:hover {
+      transform: rotate(-30deg);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hover & Transform Solution - More</h1>
+
+  <div class="square"></div>
+  <div class="triangle"></div>
+  <button class="image-btn"></button>
+  <p class="text-box">Hover Me!</p>
+  <div class="card"></div>
+
+</body>
+</html>
